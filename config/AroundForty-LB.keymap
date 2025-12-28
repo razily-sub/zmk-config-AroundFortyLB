@@ -31,7 +31,7 @@
 
         rightclick {
             bindings = <&mkp MB2>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         backspace {
@@ -81,7 +81,7 @@
 
         Scroll {
             bindings = <&mo 6>;
-            key-positions = <10 11>;
+            key-positions = <12 11>;
         };
 
         LeftClick {
@@ -211,10 +211,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &kp PAGE_UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp PAGE_DOWN  &kp LCTRL  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans         &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &msc SCRL_UP    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LCTRL       &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &msc SCRL_DOWN  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                          &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -229,10 +229,10 @@
 
         Setting {
             bindings = <
-&trans      &trans       &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans      &trans       &trans  &trans  &trans    &trans        &trans          &trans        &trans        &trans
-&trans      &trans       &trans  &trans  &to 0     &trans        &studio_unlock  &trans        &trans        &trans        &trans  &bt BT_CLR
-&sys_reset  &bootloader                  &to 1     &trans        &sys_reset      &bootloader   &trans        &trans        &trans  &bt BT_CLR_ALL
+&trans       &trans      &trans  &trans  &trans    &trans        &trans          &trans        &bt BT_CLR    &bt BT_CLR_ALL
+&trans       &trans      &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans       &trans      &trans  &trans  &trans    &trans        &studio_unlock  &trans        &to 0         &to 1           &trans      &trans
+&bootloader  &sys_reset                  &trans    &trans        &trans          &trans        &trans        &trans          &sys_reset  &bootloader
             >;
         };
     };
