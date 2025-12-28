@@ -21,27 +21,62 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <2 3 2>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
+            key-positions = <2 1>;
+        };
+
+        Space {
+            bindings = <&kp SPACE>;
+            key-positions = <11 12>;
+        };
+
+        rightclick {
+            bindings = <&mkp MB2>;
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 22>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <22 23>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        LeftBracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <6 7>;
+        };
+
+        rightbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <28 29>;
+        };
+
+        Period {
+            bindings = <&kp PERIOD>;
+            key-positions = <16 17>;
+        };
+
+        UpArrow {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <17 18>;
+        };
+
+        DownArrow {
+            bindings = <&kp DOWN>;
+            key-positions = <29 30>;
         };
     };
 
@@ -84,10 +119,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q             &kp W         &kp E  &kp R  &kp T          &kp Y                        &kp U          &kp I        &kp O        &kp P
-&kp A             &kp S         &kp D  &kp F  &kp G          &kp H                        &kp J          &kp K        &kp L        &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C  &kp V  &kp B          &kp LANGUAGE_2               &kp AT_SIGN    &kp N        &kp M        &kp COMMA     &kp PERIOD        &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_GUI                &lt 2 SPACE    &lt_to_layer_0 7 LANGUAGE_1  &kp BACKSPACE  &lt 4 ENTER  &lt 7 SPACE  &kp LEFT_ALT  &lt 8 LEFT_SHIFT  &kp DEL
+&kp Q             &kp W     &kp E  &kp R  &kp T             &kp Y      &kp U          &kp I      &kp O                   &kp P
+&kp A             &kp S     &kp D  &kp F  &kp G             &kp H      &kp J          &kp K      &kp L                   &kp HOME
+&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B             &trans     &trans         &kp N      &kp M                   &kp LEFT  &kp RIGHT   &kp END
+&kp LC(K)         &kp CLCK                &lt 2 LEFT_GUI    &kp ENTER  &kp BACKSPACE  &kp RCTRL  &mt RIGHT_ALT QUESTION  &tog 7    &kp INSERT  &kp AT_SIGN
             >;
 
             sensor-bindings =
