@@ -132,7 +132,7 @@
         Mac-Default_Layer {
             bindings = <
 &kp Q               &kp W     &kp E  &kp R  &kp T             &kp Y      &kp U           &kp I                 &kp O                   &kp P
-&lt_to_layer_0 7 A  &kp S     &kp D  &kp F  &kp G             &kp H      &kp J           &kp K                 &kp L                   &kp HOME
+&lt_to_layer_0 6 A  &kp S     &kp D  &kp F  &kp G             &kp H      &kp J           &kp K                 &kp L                   &kp HOME
 &mt LEFT_SHIFT Z    &kp X     &kp C  &kp V  &kp B             &trans     &trans          &kp N                 &kp M                   &kp LEFT  &kp RIGHT   &kp END
 &kp LC(K)           &kp CLCK                &lt 2 LEFT_GUI    &kp ENTER  &kp LANGUAGE_2  &mt RCTRL LANGUAGE_1  &mt RIGHT_ALT QUESTION  &tog 5    &kp INSERT  &kp AT_SIGN
             >;
@@ -145,7 +145,7 @@
         Win-Default_Layer {
             bindings = <
 &kp Q               &kp W     &kp E  &kp R  &kp T          &kp Y      &kp U           &kp I                 &kp O                   &kp P
-&lt_to_layer_0 7 A  &kp S     &kp D  &kp F  &kp G          &kp H      &kp J           &kp K                 &kp L                   &kp HOME
+&lt_to_layer_0 6 A  &kp S     &kp D  &kp F  &kp G          &kp H      &kp J           &kp K                 &kp L                   &kp HOME
 &mt LEFT_SHIFT Z    &kp X     &kp C  &kp V  &kp B          &trans     &trans          &kp N                 &kp M                   &kp LEFT  &kp RIGHT   &kp END
 &kp F7              &kp CAPS                &lt 4 LCTRL    &kp ENTER  &kp LANGUAGE_2  &mt RCTRL LANGUAGE_1  &mt RIGHT_ALT QUESTION  &tog 5    &kp INSERT  &kp AT_SIGN
             >;
@@ -199,21 +199,21 @@
             >;
         };
 
-        Auto-MOUSE_Layer {
-            bindings = <
-&trans     &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans  &trans
-&kp LCTRL  &trans  &mkp MB3  &mkp MB1  &trans    &trans  &mkp MB1  &mkp MB3  &trans  &trans
-&trans     &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans  &trans  &trans  &trans
-&trans     &trans                      &trans    &trans  &trans    &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
         Scroll {
             bindings = <
 &trans  &trans  &kp PAGE_UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp PAGE_DOWN  &kp LCTRL  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans         &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Auto-MOUSE_Layer {
+            bindings = <
+&trans     &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans  &trans
+&kp LCTRL  &trans  &mkp MB3  &mkp MB1  &trans    &trans  &mkp MB1  &mkp MB3  &trans  &trans
+&trans     &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans  &trans  &trans  &trans
+&trans     &trans                      &trans    &trans  &trans    &trans    &trans  &trans  &trans  &trans
             >;
         };
 
