@@ -121,7 +121,7 @@
             bindings = <
 &kp Q             &kp W     &kp E  &kp R  &kp T             &kp Y      &kp U          &kp I      &kp O                   &kp P
 &kp A             &kp S     &kp D  &kp F  &kp G             &kp H      &kp J          &kp K      &kp L                   &kp HOME
-&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B             &trans     &trans         &kp N      &kp M                   &kp LEFT  &kp RIGHT   &kp END
+&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B             &kp A      &trans         &kp N      &kp M                   &kp LEFT  &kp RIGHT   &kp END
 &kp LC(K)         &kp CLCK                &lt 2 LEFT_GUI    &kp ENTER  &kp BACKSPACE  &kp RCTRL  &mt RIGHT_ALT QUESTION  &tog 7    &kp INSERT  &kp AT_SIGN
             >;
 
