@@ -29,14 +29,9 @@
             key-positions = <2 1>;
         };
 
-        Space {
-            bindings = <&kp SPACE>;
-            key-positions = <11 12>;
-        };
-
         rightclick {
             bindings = <&mkp MB2>;
-            key-positions = <12 13>;
+            key-positions = <11 12>;
         };
 
         backspace {
@@ -88,6 +83,16 @@
             bindings = <&mo 6>;
             key-positions = <10 11>;
         };
+
+        LeftClick {
+            bindings = <&mkp MB1>;
+            key-positions = <12 13>;
+        };
+
+        NumLayerToggle {
+            bindings = <&tog 5>;
+            key-positions = <26 27>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
@@ -136,10 +141,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q             &kp W     &kp E  &kp R  &kp T          &kp Y                    &kp U           &kp I      &kp O                   &kp P
-&kp A             &kp S     &kp D  &kp F  &kp G          &kp H                    &kp J           &kp K      &kp L                   &kp HOME
-&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B          &trans                   &trans          &kp N      &kp M                   &kp LEFT  &kp RIGHT   &kp END
-&kp LC(K)         &kp CLCK                &lt 2 ENTER    &mt LEFT_GUI LANGUAGE_2  &kp LANGUAGE_1  &kp RCTRL  &mt RIGHT_ALT QUESTION  &tog 5    &kp INSERT  &kp AT_SIGN
+&kp Q             &kp W     &kp E  &kp R  &kp T          &kp Y               &kp U           &kp I             &kp O            &kp P
+&kp A             &kp S     &kp D  &kp F  &kp G          &kp H               &kp J           &kp K             &kp L            &kp HOME
+&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B          &trans              &trans          &kp N             &kp M            &kp LEFT                &kp RIGHT   &kp END
+&kp LC(K)         &kp CLCK                &lt 2 ENTER    &mt LEFT_GUI SPACE  &kp LANGUAGE_2  &lt 5 LANGUAGE_1  &mt RCTRL MINUS  &mt RIGHT_ALT QUESTION  &kp INSERT  &kp AT_SIGN
             >;
 
             sensor-bindings =
@@ -197,10 +202,10 @@
 
         Num_Symbols {
             bindings = <
-&trans                     &kp N7        &kp N8        &kp N9        &kp N0          &kp DOLLAR       &kp DOUBLE_QUOTES     &kp SQT                &kp PERCENT    &kp TILDE
-&kp UP_ARROW               &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON       &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp EQUAL
-&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans           &trans                &kp AMPERSAND          &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp MINUS
-&kp LEFT                   &kp RIGHT                                 &kp LEFT_GUI    &kp ENTER        &kp LANGUAGE_2        &kp LANGUAGE_1         &trans         &trans            &kp SEMICOLON  &kp UNDERSCORE
+&trans                     &kp N7        &kp N8        &kp N9        &kp N0       &kp DOLLAR          &kp DOUBLE_QUOTES     &kp SQT                &kp PERCENT    &kp TILDE
+&kp UP_ARROW               &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON    &kp EXCLAMATION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp EQUAL
+&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans       &trans              &trans                &kp AMPERSAND          &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp MINUS
+&kp LEFT                   &kp RIGHT                                 &kp ENTER    &mt LEFT_GUI SPACE  &kp LANGUAGE_2        &kp LANGUAGE_1         &trans         &trans            &kp SEMICOLON  &kp UNDERSCORE
             >;
         };
 
