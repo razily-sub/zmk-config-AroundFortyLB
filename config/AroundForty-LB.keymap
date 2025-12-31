@@ -19,11 +19,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <2 3 2>;
-        };
-
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <2 1>;
@@ -91,7 +86,12 @@
 
         NumLayerToggle {
             bindings = <&tog 5>;
-            key-positions = <26 27>;
+            key-positions = <25 26>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <2 3>;
         };
     };
 
@@ -141,10 +141,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q             &kp W     &kp E  &kp R  &kp T          &kp Y               &kp U           &kp I             &kp O            &kp P
-&kp A             &kp S     &kp D  &kp F  &kp G          &kp H               &kp J           &kp K             &kp L            &kp HOME
-&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B          &trans              &trans          &kp N             &kp M            &kp LEFT                &kp RIGHT   &kp END
-&kp LC(K)         &kp CLCK                &lt 2 ENTER    &mt LEFT_GUI SPACE  &kp LANGUAGE_2  &lt 5 LANGUAGE_1  &mt RCTRL MINUS  &mt RIGHT_ALT QUESTION  &kp INSERT  &kp AT_SIGN
+&kp Q             &kp W     &kp E  &kp R  &kp T                 &kp Y        &kp U               &kp I             &kp O           &kp P
+&kp A             &kp S     &kp D  &kp F  &kp G                 &kp H        &kp J               &kp K             &kp L           &mt RIGHT_SHIFT HOME
+&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B                 &trans       &trans              &kp N             &kp M           &kp LEFT              &kp RIGHT   &kp END
+&kp LC(K)         &kp CLCK                &mt LEFT_GUI ENTER    &lt 2 SPACE  &mt LCTRL QUESTION  &lt 5 LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_ALT MINUS   &kp INSERT  &kp AT_SIGN
             >;
 
             sensor-bindings =
@@ -167,10 +167,10 @@
 
         Mac-Window_Layer {
             bindings = <
-&trans          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(R)         &trans                  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp F5           &trans             &trans
-&kp F11         &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp F4                  &kp C_BRIGHTNESS_AUTO  &kp K_VOLUME_DOWN  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans
-&kp LEFT_SHIFT  &kp LC(LA(LG(LEFT)))  &kp LA(LC(LG(RIGHT)))  &kp LC(LG(F))     &kp LS(LG(NUMBER_4))    &trans                 &trans             &trans           &kp C_MUTE         &trans  &trans  &trans
-&trans          &trans                                                         &trans                  &trans                 &trans             &trans           &trans             &trans  &trans  &trans
+&trans                &kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LG(LC(F))     &kp LS(LG(NUMBER_4))    &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &trans             &trans      &trans
+&kp F11               &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp F4                  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp LC(LA(LG(D)))  &trans      &trans
+&mt LEFT_SHIFT LG(R)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)       &trans                &trans             &trans             &kp C_MUTE  &trans  &trans  &trans
+&trans                &trans                                                         &trans                  &trans                &trans             &trans             &trans      &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -202,19 +202,19 @@
 
         Num_Symbols {
             bindings = <
-&trans                     &kp N7        &kp N8        &kp N9        &kp N0       &kp DOLLAR          &kp DOUBLE_QUOTES     &kp SQT                &kp PERCENT    &kp TILDE
-&kp UP_ARROW               &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON    &kp EXCLAMATION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp EQUAL
-&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans       &trans              &trans                &kp AMPERSAND          &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp MINUS
-&kp LEFT                   &kp RIGHT                                 &kp ENTER    &mt LEFT_GUI SPACE  &kp LANGUAGE_2        &kp LANGUAGE_1         &trans         &trans            &kp SEMICOLON  &kp UNDERSCORE
+&trans                     &kp N7        &kp N8        &kp N9        &kp N0                &kp DOLLAR       &kp DOUBLE_QUOTES     &kp SQT                &kp PERCENT     &kp TILDE
+&kp UP_ARROW               &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON             &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH       &kp EQUAL
+&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD            &trans           &trans                &kp AMPERSAND          &kp LESS_THAN   &kp GREATER_THAN  &kp PLUS       &kp MINUS
+&kp LEFT                   &kp RIGHT                                 &mt LEFT_GUI ENTER    &kp SPACE        &trans                &kp LANGUAGE_2         &kp LANGUAGE_1  &trans            &kp SEMICOLON  &kp UNDERSCORE
             >;
         };
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &msc SCRL_UP    &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LCTRL       &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &msc SCRL_DOWN  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                          &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LG(PLUS)   &kp LG(N0)    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LCTRL      &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LG(MINUS)  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                         &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -229,10 +229,10 @@
 
         Setting {
             bindings = <
-&trans       &trans      &trans  &trans  &trans    &trans        &trans          &trans        &bt BT_CLR    &bt BT_CLR_ALL
-&trans       &trans      &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans       &trans      &trans  &trans  &trans    &trans        &studio_unlock  &trans        &to 0         &to 1           &trans      &trans
-&bootloader  &sys_reset                  &trans    &trans        &trans          &trans        &trans        &trans          &sys_reset  &bootloader
+&trans        &trans        &trans        &trans        &trans          &bt BT_CLR  &trans          &trans  &trans  &bt BT_CLR_ALL
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans      &trans          &trans  &trans  &trans
+&trans        &trans        &to 1         &to 0         &trans          &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
+&bootloader   &sys_reset                                &trans          &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
             >;
         };
     };
