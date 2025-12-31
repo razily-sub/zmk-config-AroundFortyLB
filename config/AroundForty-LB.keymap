@@ -101,7 +101,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -141,9 +141,9 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q             &kp W     &kp E  &kp R  &kp T                 &kp Y        &kp U               &kp I             &kp O           &kp P
-&kp A             &kp S     &kp D  &kp F  &kp G                 &kp H        &kp J               &kp K             &kp L           &mt RIGHT_SHIFT HOME
-&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B                 &trans       &trans              &kp N             &kp M           &kp LEFT              &kp RIGHT   &kp END
+&kp Q             &kp W     &kp E  &kp R  &kp T                 &kp Y        &kp U               &kp I             &kp L           &kp P
+&kp A             &kp S     &kp D  &kp F  &kp G                 &kp H        &kp J               &kp K             &kp O           &mt RIGHT_SHIFT HOME
+&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B                 &trans       &trans              &kp N             &kp M           &kp LEFT              &kp RIGHT   &mt RIGHT_GUI END
 &kp LC(K)         &kp CLCK                &mt LEFT_GUI ENTER    &lt 2 SPACE  &mt LCTRL QUESTION  &lt 5 LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_ALT MINUS   &kp INSERT  &kp AT_SIGN
             >;
 
@@ -167,10 +167,10 @@
 
         Mac-Window_Layer {
             bindings = <
-&trans                &kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LG(LC(F))     &kp LS(LG(NUMBER_4))    &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &trans             &trans      &trans
-&kp F11               &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp F4                  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp LC(LA(LG(D)))  &trans      &trans
-&mt LEFT_SHIFT LG(R)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)       &trans                &trans             &trans             &kp C_MUTE  &trans  &trans  &trans
-&trans                &trans                                                         &trans                  &trans                &trans             &trans             &trans      &trans  &trans  &trans
+&trans                &kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &trans             &trans      &trans
+&kp F11               &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp LC(LG(F))           &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp LC(LA(LG(D)))  &trans      &trans
+&mt LEFT_SHIFT LG(R)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))  &kp LA(LG(RIGHT))       &trans                &trans             &trans             &kp C_MUTE  &trans  &trans  &trans
+&kp F4                &trans                                                         &kp LS(LG(NUMBER_4))    &trans                &trans             &trans             &trans      &trans  &trans  &trans
             >;
 
             sensor-bindings =
