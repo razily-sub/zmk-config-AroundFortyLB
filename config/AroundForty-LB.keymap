@@ -144,7 +144,7 @@
 &kp Q             &kp W     &kp E  &kp R  &kp T                 &kp Y        &kp U               &kp I             &kp L           &kp P
 &kp A             &kp S     &kp D  &kp F  &kp G                 &kp H        &kp J               &kp K             &kp O           &mt RIGHT_SHIFT HOME
 &mt LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B                 &trans       &trans              &kp N             &kp M           &kp LEFT              &kp RIGHT   &mt RIGHT_GUI END
-&kp LC(K)         &kp CLCK                &mt LEFT_GUI ENTER    &lt 2 SPACE  &mt LCTRL QUESTION  &lt 5 LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_ALT MINUS   &kp INSERT  &kp AT_SIGN
+&lt 9 LC(K)       &kp CLCK                &mt LEFT_GUI ENTER    &lt 2 SPACE  &mt LCTRL QUESTION  &lt 5 LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_ALT MINUS   &kp INSERT  &kp AT_SIGN
             >;
 
             sensor-bindings =
@@ -233,6 +233,15 @@
 &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans      &trans          &trans  &trans  &trans
 &trans        &trans        &to 1         &to 0         &trans          &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
 &bootloader   &sys_reset                                &trans          &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
+            >;
+        };
+
+        iPad_Window {
+            bindings = <
+&trans  &trans                &trans                 &trans        &trans    &trans     &trans  &trans  &trans  &trans
+&kp H   &kp LEFT              &kp RIGHT              &kp UP_ARROW  &trans    &trans     &trans  &trans  &trans  &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans        &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                                     &trans    &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
