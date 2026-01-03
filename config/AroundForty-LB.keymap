@@ -137,9 +137,9 @@
         Mac-Default_Layer {
             bindings = <
 &kp Q        &kp W     &kp E  &kp R  &kp T                 &kp Y        &kp U           &kp I                     &kp L                       &kp P
-&kp A        &kp S     &kp D  &kp F  &kp G                 &kp H        &kp J           &kp K                     &kp O                       &kp UP_ARROW
-&kp Z        &kp X     &kp C  &kp V  &kp B                 &trans       &trans          &kp N                     &kp M                       &kp AT_SIGN   &kp LEFT    &kp RIGHT
-&lt 9 LC(K)  &kp CLCK                &mt LEFT_GUI ENTER    &lt 2 SPACE  &lt 5 QUESTION  &mt RIGHT_ALT LANGUAGE_2  &mt RIGHT_SHIFT LANGUAGE_1  &kp RCTRL     &kp INSERT  &kp DOWN
+&kp A        &kp S     &kp D  &kp F  &kp G                 &kp H        &kp J           &kp K                     &kp O                       &mt RIGHT_GUI UP_ARROW
+&kp Z        &kp X     &kp C  &kp V  &kp B                 &trans       &trans          &kp N                     &kp M                       &kp AT_SIGN             &kp LEFT    &kp RIGHT
+&lt 9 LC(K)  &kp CLCK                &mt LEFT_GUI ENTER    &lt 2 SPACE  &lt 5 QUESTION  &mt RIGHT_ALT LANGUAGE_2  &mt RIGHT_SHIFT LANGUAGE_1  &kp RCTRL               &kp INSERT  &kp DOWN
             >;
 
             sensor-bindings =
@@ -162,10 +162,10 @@
 
         Mac-Window_Layer {
             bindings = <
-&trans                &kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)       &kp DOLLAR  &kp SQT        &kp DOUBLE_QUOTES     &kp PERCENT            &trans
-&kp F11               &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp LC(LG(F))           &kp PLUS    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&mt LEFT_SHIFT LG(R)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))  &kp LA(LG(RIGHT))       &trans      &trans         &kp MINUS             &kp EXCLAMATION        &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
-&kp F4                &trans                                                         &kp LS(LG(NUMBER_4))    &trans      &trans         &kp LANGUAGE_2        &kp LANGUAGE_1         &trans         &kp SEMICOLON     &kp UNDERSCORE
+&trans     &kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)       &kp DOLLAR  &kp SQT        &kp DOUBLE_QUOTES     &kp PERCENT            &trans
+&kp F11    &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp LC(LG(F))           &kp PLUS    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp LG(R)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))  &kp LA(LG(RIGHT))       &trans      &trans         &kp MINUS             &kp EXCLAMATION        &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
+&kp F4     &trans                                                         &kp LS(LG(NUMBER_4))    &trans      &trans         &kp LANGUAGE_2        &kp LANGUAGE_1         &trans         &kp SEMICOLON     &kp UNDERSCORE
             >;
 
             sensor-bindings =
@@ -197,10 +197,10 @@
 
         Num_Symbols {
             bindings = <
-&kp UP_ARROW               &kp N7        &kp N8        &kp N9        &kp TILDE             &kp RG(Z)  &kp RG(V)      &kp RS(RG(V))     &kp RS(RG(GREATER_THAN))  &kp RS(RG(LESS_THAN))
-&kp N0                     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON             &kp RG(A)  &kp RG(C)      &kp RS(RG(C))     &kp RG(X)                 &kp RS(UP_ARROW)
-&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD            &trans     &kp RS(RG(Z))  &kp RS(RA(LEFT))  &kp RA(RS(RIGHT))         &kp RS(END)            &kp RS(LEFT)  &kp RS(RIGHT)
-&kp LEFT                   &kp RIGHT                                 &mt LEFT_GUI ENTER    &kp SPACE  &trans         &kp RA(LEFT)      &kp RA(RIGHT)             &kp END                &kp HOME      &kp RS(DOWN)
+&kp UP_ARROW               &kp N7        &kp N8        &kp N9        &kp TILDE             &kp RG(RS(Z))  &kp RG(V)  &kp RS(RG(V))     &kp RS(RG(GREATER_THAN))  &kp RS(RG(LESS_THAN))
+&kp N0                     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON             &kp RG(Z)      &kp RG(C)  &kp RS(RG(C))     &kp RG(X)                 &kp RS(UP_ARROW)
+&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD            &trans         &kp RG(A)  &kp RS(RA(LEFT))  &kp RA(RS(RIGHT))         &kp RS(END)            &kp RS(LEFT)  &kp RS(RIGHT)
+&kp LEFT                   &kp RIGHT                                 &mt LEFT_GUI ENTER    &kp SPACE      &trans     &kp RA(LEFT)      &kp RA(RIGHT)             &kp END                &kp HOME      &kp RS(DOWN)
             >;
         };
 
