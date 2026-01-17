@@ -189,8 +189,8 @@
             bindings = <
 &kp LC(PAGE_UP)       &kp LC(PAGE_DOWN)      &kp LG(W)             &kp LG(S)              &kp LG(T)    &kp DOLLAR            &kp SQT           &kp DQT            &kp SEMICOLON         &trans
 &kp LC(LEFT)          &kp LC(RIGHT)          &kp LC(LG(F))         &kp LC(UP_ARROW)       &kp LG(R)    &kp AT_SIGN           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp EQUAL
-&kp LG(LA(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(F)    &kp LS(LG(NUMBER_4))  &trans            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp SLASH
-&kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(RIGHT)))                                               &trans       &trans                &trans            &trans             &kp LESS_THAN         &kp GREATER_THAN       &trans     &kp UNDERSCORE
+&kp LG(LA(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(F)    &kp LG(Q)             &trans            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp SLASH
+&kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(RIGHT)))                                               &trans       &kp LS(LG(NUMBER_4))  &trans            &trans             &kp LESS_THAN         &kp GREATER_THAN       &trans     &kp UNDERSCORE
             >;
 
             sensor-bindings =
@@ -231,10 +231,10 @@
 
         Scroll {
             bindings = <
-&trans  &kp F11    &kp LG(PLUS)   &kp PAGE_UP    &kp LC(F5)    &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans             &trans             &trans
-&trans  &kp LCTRL  &kp LG(MINUS)  &kp PAGE_DOWN  &trans        &kp C_BRIGHTNESS_DEC  &kp C_MUTE       &kt RC(RA(RG(D)))  &trans             &trans
-&trans  &kp F4     &kp LG(N0)     &trans         &trans        &trans                &trans           &trans             &kp C_VOLUME_DOWN  &trans  &trans  &trans
-&trans  &trans                                   &trans        &trans                &trans           &trans             &trans             &trans  &trans  &trans
+&trans  &kp F11    &kp PAGE_UP    &kp LG(PLUS)   &kp LC(F5)    &trans  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans             &trans
+&trans  &kp LCTRL  &kp PAGE_DOWN  &kp LG(MINUS)  &trans        &trans  &kp C_MUTE       &kt RC(RA(RG(D)))     &trans             &trans
+&trans  &kp F4     &trans         &kp LG(N0)     &trans        &trans  &trans           &trans                &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &trans
+&trans  &trans                                   &trans        &trans  &trans           &trans                &trans             &trans                &trans  &trans
             >;
         };
 
