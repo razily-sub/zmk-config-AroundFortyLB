@@ -39,18 +39,13 @@
             key-positions = <2 3>;
         };
 
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <28 29>;
-        };
-
-        Period {
-            bindings = <&kp PERIOD>;
+        Left {
+            bindings = <&kp LEFT>;
             key-positions = <16 17>;
         };
 
-        Nobashi_Bar {
-            bindings = <&kp MINUS>;
+        Right {
+            bindings = <&kp RIGHT>;
             key-positions = <17 18>;
         };
 
@@ -74,14 +69,14 @@
             key-positions = <22 23>;
         };
 
-        LeftBracket {
-            bindings = <&kp LBKT>;
-            key-positions = <6 7>;
+        Up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <7 8>;
         };
 
-        rightbracket {
-            bindings = <&kp RBKT>;
-            key-positions = <7 8>;
+        Down {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <29 30>;
         };
     };
 
@@ -148,13 +143,13 @@
             flavor = "tap-preferred";
         };
 
-        FScrollLayerTapPrefer: FScrollLayerTapPrefer {
+        AScrollLayerTapPrefer: AScrollLayerTapPrefer {
             compatible = "zmk,behavior-hold-tap";
-            label = "FSCROLLLAYERTAPPREFER";
+            label = "ASCROLLLAYERTAPPREFER";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <260>;
             flavor = "tap-preferred";
         };
     };
@@ -166,10 +161,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q                          &kp W     &kp E  &kp R                       &kp T                     &kp Y         &kp U       &kp I                   &kp L          &kp P
-&kp A                          &kp S     &kp D  &FScrollLayerTapPrefer 6 F  &kp G                     &kp H         &kp J       &kp K                   &kp O          &mt RIGHT_GUI UP_ARROW
-&ZShiftTapPrefer LEFT_SHIFT Z  &kp X     &kp C  &kp V                       &kp B                     &trans        &trans      &kp N                   &kp M          &kp AT_SIGN             &kp LEFT    &mt RIGHT_SHIFT RIGHT
-&lt 9 LC(K)                    &kp CLCK                                     &lt_to_layer_0 2 ENTER    &kp LEFT_GUI  &tap_dance  &lt_to_layer_0 5 SPACE  &kp RIGHT_ALT  &kp RCTRL               &kp INSERT  &kp DOWN
+&kp Q                          &kp W     &kp E  &kp R  &kp T                     &kp Y                    &kp U                     &kp I                   &kp L            &kp P
+&AScrollLayerTapPrefer 6 A     &kp S     &kp D  &kp F  &kp G                     &kp H                    &kp J                     &kp K                   &kp O            &mt RIGHT_GUI COMMA
+&ZShiftTapPrefer LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B                     &trans                   &trans                    &kp N                   &kp M            &kp EXCLAMATION      &kp QUESTION  &ZShiftTapPrefer RIGHT_SHIFT PERIOD
+&lt 9 LC(K)                    &kp CLCK                &lt_to_layer_0 2 ENTER    &mt LEFT_GUI LANGUAGE_2  &mt RIGHT_ALT LANGUAGE_1  &lt_to_layer_0 5 SPACE  &mt RCTRL RG(Z)  &kp RG(RS(Z))        &kp INSERT    &kp MINUS
             >;
 
             sensor-bindings =
@@ -192,10 +187,10 @@
 
         Mac-Window_Symbol {
             bindings = <
-&kp LS(LG(NUMBER_4))  &kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)    &kp DOLLAR  &kp SQT   &kp DQT    &kp PERCENT      &trans
-&kp F11               &kp LC(LEFT_ARROW)    &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp LC(LG(F))        &kp PLUS    &kp AMPS  &kp LPAR   &kp RPAR         &kp EQUAL
-&kp LG(R)             &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))  &kp LA(LG(RIGHT))    &trans      &trans    &kp MINUS  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
-&kp F4                &trans                                                         &trans               &trans      &trans    &trans     &trans           &trans         &kp SEMICOLON     &kp UNDERSCORE
+&kp LC(PAGE_UP)       &kp LC(PAGE_DOWN)      &kp LG(W)             &kp LG(S)              &kp LG(T)    &kp DOLLAR            &kp SQT               &kp DQT                &kp SEMICOLON  &trans
+&kp LC(LEFT)          &kp LC(RIGHT)          &kp LC(UP_ARROW)      &kp LC(LG(F))          &kp LG(R)    &kp AT_SIGN           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &kp EQUAL
+&kp LG(LA(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(F)    &kp LS(LG(NUMBER_4))  &trans                &kp AMPERSAND          &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &kp SLASH
+&kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(RIGHT)))                                               &trans       &trans                &trans                &trans                 &trans         &trans            &trans     &kp UNDERSCORE
             >;
 
             sensor-bindings =
@@ -227,19 +222,19 @@
 
         Num_Editting {
             bindings = <
-&kp UP_ARROW               &kp N7        &kp N8        &kp N9        &kp TILDE     &kp RG(RS(Z))  &kp RG(V)     &kp RS(RG(V))     &kp RS(RG(GREATER_THAN))  &kp RS(RG(LESS_THAN))
-&kp N0                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON     &kp RG(Z)      &kp RG(C)     &kp RS(RG(C))     &kp RG(X)                 &kp RS(UP_ARROW)
-&mt LEFT_SHIFT DOWN_ARROW  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &trans         &kp RG(A)     &kp RS(RA(LEFT))  &kp RA(RS(RIGHT))         &kp RS(END)            &kp RS(LEFT)  &kp RS(RIGHT)
-&kp LEFT                   &kp RIGHT                                 &kp ENTER     &TapDanceGUI   &kp RA(LEFT)  &trans            &kp RA(RIGHT)             &kp END                &kp HOME      &kp RS(DOWN)
+&kp UP_ARROW                            &kp N7        &kp N8        &kp N9        &kp TILDE     &kp RG(B)       &kp RG(V)       &kp RS(RG(V))  &kp RS(RG(GREATER_THAN))  &kp RS(RG(LESS_THAN))
+&kp N0                                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON     &kp RG(U)       &kp RG(C)       &kp RS(RG(C))  &kp RG(X)                 &kp RG(A)
+&ZShiftTapPrefer LEFT_SHIFT DOWN_ARROW  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp PERCENT     &trans          &trans         &kp RA(RS(LEFT))          &kp RS(RA(RIGHT))      &kp RS(HOME)  &kp RS(END)
+&kp LEFT                                &kp RIGHT                                 &kp ENTER     &kp LANGUAGE_2  &kp LANGUAGE_1  &trans         &kp RA(LEFT)              &kp RA(RIGHT)          &kp HOME      &kp END
             >;
         };
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &kp LG(PLUS)   &kp LG(N0)       &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans             &trans             &trans
-&trans  &trans  &trans  &kp LCTRL      &kp PAGE_UP      &kp C_BRIGHTNESS_DEC  &kp C_MUTE       &kt RC(RA(RG(D)))  &trans             &trans
-&trans  &trans  &trans  &kp LG(MINUS)  &kp PAGE_DOWN    &trans                &trans           &trans             &kp C_VOLUME_DOWN  &trans  &trans  &trans
-&trans  &trans                         &trans           &trans                &trans           &trans             &trans             &trans  &trans  &trans
+&trans  &kp F11    &kp LG(PLUS)   &kp PAGE_UP    &kp LC(F5)    &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans             &trans             &trans
+&trans  &kp LCTRL  &kp LG(MINUS)  &kp PAGE_DOWN  &trans        &kp C_BRIGHTNESS_DEC  &kp C_MUTE       &kt RC(RA(RG(D)))  &trans             &trans
+&trans  &kp F4     &kp LG(N0)     &trans         &trans        &trans                &trans           &trans             &kp C_VOLUME_DOWN  &trans  &trans  &trans
+&trans  &trans                                   &trans        &trans                &trans           &trans             &trans             &trans  &trans  &trans
             >;
         };
 
