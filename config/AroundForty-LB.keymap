@@ -224,7 +224,7 @@
             bindings = <
 &kp UP_ARROW                            &kp N7        &kp N8        &kp N9        &kp TILDE     &kp RG(B)       &kp RG(V)       &kp RS(RG(V))  &kp RS(RG(GREATER_THAN))  &kp RS(RG(LESS_THAN))
 &kp N0                                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON     &kp RG(U)       &kp RG(C)       &kp RS(RG(C))  &kp RG(X)                 &kp RG(A)
-&ZShiftTapPrefer LEFT_SHIFT DOWN_ARROW  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp PERCENT     &trans          &trans         &kp RA(RS(LEFT))          &kp RS(RA(RIGHT))      &kp RS(HOME)  &kp RS(END)
+&ZShiftTapPrefer LEFT_SHIFT DOWN_ARROW  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp PERCENT     &trans          &kp RG(P)      &kp RA(RS(LEFT))          &kp RS(RA(RIGHT))      &kp RS(HOME)  &kp RS(END)
 &kp LEFT                                &kp RIGHT                                 &kp ENTER     &kp LANGUAGE_2  &kp LANGUAGE_1  &trans         &kp RA(LEFT)              &kp RA(RIGHT)          &kp HOME      &kp END
             >;
         };
