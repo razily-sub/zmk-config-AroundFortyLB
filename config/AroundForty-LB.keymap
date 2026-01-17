@@ -26,7 +26,7 @@
 
         rightclick {
             bindings = <&mkp MB2>;
-            key-positions = <11 10>;
+            key-positions = <12 11>;
         };
 
         backspace {
@@ -82,11 +82,6 @@
         rightbracket {
             bindings = <&kp RBKT>;
             key-positions = <7 8>;
-        };
-
-        scroll {
-            bindings = <&mo 6>;
-            key-positions = <11 12>;
         };
     };
 
@@ -149,7 +144,17 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
+            flavor = "tap-preferred";
+        };
+
+        FScrollLayerTapPrefer: FScrollLayerTapPrefer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FSCROLLLAYERTAPPREFER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
             flavor = "tap-preferred";
         };
     };
@@ -161,10 +166,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q                          &kp W     &kp E  &kp R  &kp T                     &kp Y         &kp U       &kp I                   &kp L          &kp P
-&kp A                          &kp S     &kp D  &kp F  &kp G                     &kp H         &kp J       &kp K                   &kp O          &mt RIGHT_GUI UP_ARROW
-&ZShiftTapPrefer LEFT_SHIFT Z  &kp X     &kp C  &kp V  &kp B                     &trans        &trans      &kp N                   &kp M          &kp AT_SIGN             &kp LEFT    &mt RIGHT_SHIFT RIGHT
-&lt 9 LC(K)                    &kp CLCK                &lt_to_layer_0 2 ENTER    &kp LEFT_GUI  &tap_dance  &lt_to_layer_0 5 SPACE  &kp RIGHT_ALT  &kp RCTRL               &kp INSERT  &kp DOWN
+&kp Q                          &kp W     &kp E  &kp R                       &kp T                     &kp Y         &kp U       &kp I                   &kp L          &kp P
+&kp A                          &kp S     &kp D  &FScrollLayerTapPrefer 6 F  &kp G                     &kp H         &kp J       &kp K                   &kp O          &mt RIGHT_GUI UP_ARROW
+&ZShiftTapPrefer LEFT_SHIFT Z  &kp X     &kp C  &kp V                       &kp B                     &trans        &trans      &kp N                   &kp M          &kp AT_SIGN             &kp LEFT    &mt RIGHT_SHIFT RIGHT
+&lt 9 LC(K)                    &kp CLCK                                     &lt_to_layer_0 2 ENTER    &kp LEFT_GUI  &tap_dance  &lt_to_layer_0 5 SPACE  &kp RIGHT_ALT  &kp RCTRL               &kp INSERT  &kp DOWN
             >;
 
             sensor-bindings =
