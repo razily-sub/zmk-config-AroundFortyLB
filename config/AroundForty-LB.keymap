@@ -31,12 +31,12 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <1 2>;
+            key-positions = <21 22>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <2 3>;
+            key-positions = <22 23>;
         };
 
         Left {
@@ -90,13 +90,13 @@
 
         ControlMission {
             bindings = <&kp LC(UP_ARROW)>;
-            key-positions = <22 23>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
         FullScreen {
             bindings = <&kp LC(LG(F))>;
-            key-positions = <22 21>;
+            key-positions = <1 2>;
             layers = <0>;
         };
 
@@ -256,9 +256,9 @@
 
         Mac-Window_Symbol {
             bindings = <
-&kp LA(LG(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(T)           &kp DOLLAR            &kp SQT           &kp DQT            &kp SEMICOLON         &trans
-&kp LG(F)             &kp LG(R)              &kp LG(S)             &kp LG(W)              &kp LG(UP_ARROW)    &kp AT_SIGN           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp EQUAL
-&kp LG(LA(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(LEFT)          &kp LC(RIGHT)          &kp LG(DOWN)        &kp LG(Q)             &trans            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp SLASH
+&kp LA(LG(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(LEFT)          &kp LC(RIGHT)          &kp LG(UP_ARROW)    &kp DOLLAR            &kp SQT           &kp DQT            &kp SEMICOLON         &trans
+&kp LG(F)             &kp LG(R)              &kp LG(S)             &kp LG(W)              &kp LG(DOWN)        &kp AT_SIGN           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp EQUAL
+&kp LG(LA(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(T)           &kp LG(Q)             &trans            &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp SLASH
 &kp LC(PAGE_UP)       &kp LC(PAGE_DOWN)                                                   &trans              &kp LS(LG(NUMBER_4))  &trans            &trans             &kp LESS_THAN         &kp GREATER_THAN       &trans     &kp UNDERSCORE
             >;
 
