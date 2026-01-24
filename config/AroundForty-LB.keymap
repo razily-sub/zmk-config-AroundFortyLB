@@ -42,11 +42,13 @@
         Left {
             bindings = <&kp LEFT>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         Right {
             bindings = <&kp RIGHT>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         Escape {
@@ -72,11 +74,13 @@
         Up {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 8>;
+            layers = <0>;
         };
 
         Down {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <17 18>;
+            layers = <0>;
         };
 
         Bar {
