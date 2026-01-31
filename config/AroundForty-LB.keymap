@@ -302,10 +302,10 @@
 
         iOS_Window_Editting {
             bindings = <
-&trans  &trans                &trans                 &trans               &trans         &trans     &trans  &trans  &trans  &trans
-&kp H   &kp LEFT              &kp RIGHT              &iPadControlMission  &trans         &trans     &trans  &trans  &trans  &trans
-&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))      &kp LC(TAB)    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                            &trans         &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                 &trans           &trans         &trans     &trans  &trans  &trans  &trans
+&kp H   &kp LEFT              &kp RIGHT              &trans           &trans         &trans     &trans  &trans  &trans  &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                                        &trans         &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
