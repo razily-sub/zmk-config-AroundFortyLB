@@ -296,10 +296,10 @@
 
         Win_Window-Editting {
             bindings = <
-&kp LC(A)       &kp LC(X)     &kp LC(C)    &kp LC(V)  &kp LC(LS(V))    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
-&kp TAB         &kp LEFT_GUI  &kp LS(TAB)  &mkp MB1   &mkp MB2         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&kp LEFT_SHIFT  &trans        &trans       &trans     &mkp MB3         &trans                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
-&kp LCTRL       &trans                                &trans           &trans                &kp BACKSPACE          &kp ENTER         &trans             &trans             &trans        &kp HASH
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))   &kp LA(UP_ARROW)    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
+&kp LC(F)           &kp LC(R)          &kp LC(S)               &kp LC(W)           &kp LA(DOWN)        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
+&kp LS(LC(TAB))     &kp LC(TAB)        &kp LA(RIGHT)           &kp LA(LEFT_ARROW)  &kp LC(T)           &kp LG(LS(S))         &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                              &trans              &trans                &kp BACKSPACE          &kp ENTER         &trans             &trans             &trans        &kp HASH
             >;
 
             sensor-bindings =
