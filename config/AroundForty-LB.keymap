@@ -42,13 +42,13 @@
         Left {
             bindings = <&kp LEFT>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 2 4 6 7 8>;
         };
 
         Right {
             bindings = <&kp RIGHT>;
             key-positions = <18 19>;
-            layers = <0>;
+            layers = <0 2 4 6 7 8>;
         };
 
         Escape {
@@ -75,13 +75,13 @@
         Up {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 2 4 6 7 8>;
         };
 
         Down {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <0 2 4 6 7 8>;
         };
 
         Katakana {
@@ -283,10 +283,10 @@
 
         Win-Default_Layer {
             bindings = <
-&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                      &kp U           &kp I                 &kp O                   &kp P
-&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                      &kp J           &kp K                 &kp L                   &kp HOME
-&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &trans                     &trans          &kp N                 &kp M                   &kp LEFT  &kp RIGHT   &kp END
-&kp LG(D)                   &trans                &lt 3 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &kp LANGUAGE_2  &mt RCTRL LANGUAGE_1  &mt RIGHT_ALT QUESTION  &tog 7    &kp INSERT  &kp AT_SIGN
+&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                      &kp U                     &kp I        &kp L                &kp P
+&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                      &kp J                     &kp K        &kp O                &kp PERIOD
+&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &trans                     &trans                    &kp N        &kp M                &kp SLASH            &kp MINUS        &kp COMMA
+&kp LG(D)                   &trans                &lt 3 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &mt RIGHT_ALT LANGUAGE_1  &lt 3 SPACE  &mt RIGHT_GUI RC(Z)  &mt RCTRL RS(RC(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
 
             sensor-bindings =
