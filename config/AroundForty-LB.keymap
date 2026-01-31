@@ -365,10 +365,10 @@
 
         Setting {
             bindings = <
-&trans        &trans            &trans            &trans             &trans    &bt BT_CLR  &trans          &trans  &trans  &bt BT_CLR_ALL
-&bt BT_SEL 3  &Cutom_macro_BT2  &Cutom_macro_BT1  &Custom_macro_BT0  &trans    &trans      &trans          &trans  &trans  &trans
-&bt BT_SEL 4  &to 4             &to 2             &to 0              &trans    &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
-&bootloader   &sys_reset                                             &trans    &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
+&trans        &trans        &trans        &trans        &trans    &bt BT_CLR  &trans          &trans  &trans  &bt BT_CLR_ALL
+&bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans    &trans      &trans          &trans  &trans  &trans
+&bt BT_SEL 4  &to 4         &to 2         &to 0         &trans    &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
+&bootloader   &sys_reset                                &trans    &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
             >;
         };
     };
