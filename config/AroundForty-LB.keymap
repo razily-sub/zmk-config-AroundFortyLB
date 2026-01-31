@@ -177,6 +177,14 @@
             bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        BT0_Layer0: BT0_Layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
+
+            label = "BT0_LAYER0";
+        };
     };
 
     //新たな動作を定義する
