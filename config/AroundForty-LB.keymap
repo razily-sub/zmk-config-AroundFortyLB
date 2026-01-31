@@ -52,13 +52,14 @@
         };
 
         Escape {
-            bindings = <&lt_to_layer_0 5 ESCAPE>;
+            bindings = <&lt_to_layer_0 8 ESCAPE>;
             key-positions = <35 36>;
         };
 
         LeftClick {
             bindings = <&mkp MB1>;
             key-positions = <12 13>;
+            layers = <0 2 4 6 7 8>;
         };
 
         NumLayerToggle {
@@ -88,13 +89,13 @@
             key-positions = <6 7>;
         };
 
-        ControlMission {
+        Mac_ControlMission {
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <2 3>;
             layers = <0>;
         };
 
-        FullScreen {
+        Mac_FullScreen {
             bindings = <&kp LC(LG(F))>;
             key-positions = <1 2>;
             layers = <0>;
@@ -127,31 +128,43 @@
         Choice-Up {
             bindings = <&kp RS(UP_ARROW)>;
             key-positions = <7 8>;
-            layers = <7>;
+            layers = <1 3 5>;
         };
 
         Choice-Down {
             bindings = <&kp RS(DOWN)>;
             key-positions = <17 18>;
-            layers = <7>;
+            layers = <1 3 5>;
         };
 
         Choice-Left {
             bindings = <&kp RS(LEFT)>;
             key-positions = <16 17>;
-            layers = <7>;
+            layers = <1 3 5>;
         };
 
         Choice-Right {
             bindings = <&kp RS(RIGHT)>;
             key-positions = <18 19>;
-            layers = <7>;
+            layers = <1 3 5>;
         };
 
         Close_App {
             bindings = <&kp LG(Q)>;
             key-positions = <12 13>;
             layers = <1>;
+        };
+
+        Win_FullScreen {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <1 2>;
+            layers = <2>;
+        };
+
+        Win_ControlMission {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <2 3>;
+            layers = <2>;
         };
     };
 
@@ -245,9 +258,9 @@
         Mac-Default_Layer {
             bindings = <
 &kp Q                       &kp W   &kp E  &kp R  &kp T                     &kp Y                      &kp U                     &kp I                   &kp L                &kp P
-&AScrollLayerTapPrefer 8 A  &kp S   &kp D  &kp F  &kp G                     &kp H                      &kp J                     &kp K                   &kp O                &kp PERIOD
+&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G                     &kp H                      &kp J                     &kp K                   &kp O                &kp PERIOD
 &kp BACKSPACE               &kp X   &kp C  &kp V  &kp B                     &trans                     &trans                    &kp N                   &kp M                &kp SLASH            &kp MINUS        &kp COMMA
-&lt 5 F11                   &kp F4                &lt_to_layer_0 1 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &mt RIGHT_ALT LANGUAGE_1  &lt_to_layer_0 7 SPACE  &mt RIGHT_GUI RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
+&kp F11                     &kp F4                &lt_to_layer_0 1 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &mt RIGHT_ALT LANGUAGE_1  &lt_to_layer_0 7 SPACE  &mt RIGHT_GUI RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
 
             sensor-bindings =
@@ -270,10 +283,10 @@
 
         Win-Default_Layer {
             bindings = <
-&kp Q               &kp W     &kp E  &kp R  &kp T          &kp Y      &kp U           &kp I                 &kp O                   &kp P
-&lt_to_layer_0 8 A  &kp S     &kp D  &kp F  &kp G          &kp H      &kp J           &kp K                 &kp L                   &kp HOME
-&mt LEFT_SHIFT Z    &kp X     &kp C  &kp V  &kp B          &trans     &trans          &kp N                 &kp M                   &kp LEFT  &kp RIGHT   &kp END
-&kp F7              &kp CAPS                &lt 3 LCTRL    &kp ENTER  &kp LANGUAGE_2  &mt RCTRL LANGUAGE_1  &mt RIGHT_ALT QUESTION  &tog 7    &kp INSERT  &kp AT_SIGN
+&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                      &kp U           &kp I                 &kp O                   &kp P
+&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                      &kp J           &kp K                 &kp L                   &kp HOME
+&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &trans                     &trans          &kp N                 &kp M                   &kp LEFT  &kp RIGHT   &kp END
+&kp LG(D)                   &trans                &lt 3 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &kp LANGUAGE_2  &mt RCTRL LANGUAGE_1  &mt RIGHT_ALT QUESTION  &tog 7    &kp INSERT  &kp AT_SIGN
             >;
 
             sensor-bindings =
