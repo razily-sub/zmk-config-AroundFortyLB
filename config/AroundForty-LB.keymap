@@ -178,39 +178,31 @@
             label = "TO_LAYER_0";
         };
 
-        iPadControlMission: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE>, <&macro_press>, <&kp UP_ARROW>;
-
-            label = "NEW_MACRO";
-        };
-
-        Custom_macro_BT0: Custom_macro_BT1 {
+        Custom_macro_BT0: Custom_macro_BT0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
 
-            label = "CUSTOM_MACRO_BT1";
+            label = "CUSTOM_MACRO_BT0";
         };
 
-        Cutom_macro_BT1: new_macro {
+        Cutom_macro_BT1: Cutom_macro_BT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 2>;
 
-            label = "NEW_MACRO";
+            label = "Cutom_macro_BT1";
         };
 
-        Cutom_macro_BT2: new_macro {
+        Cutom_macro_BT2: Cutom_macro_BT2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 4>;
 
-            label = "NEW_MACRO";
+            label = "Cutom_macro_BT2";
         };
 
-        new_macro: new_macro {
+        iPad_Globe: iPad_Globe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -219,7 +211,7 @@
                 <&kp UP_ARROW>,
                 <&macro_release>;
 
-            label = "NEW_MACRO";
+            label = "IPAD_GLOBE";
         };
     };
 
