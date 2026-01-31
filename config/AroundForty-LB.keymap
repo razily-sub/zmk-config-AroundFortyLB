@@ -296,10 +296,10 @@
 
         Win_Window-Editting {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))   &kp LA(UP_ARROW)    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
-&kp LC(F)           &kp LC(R)          &kp LC(S)               &kp LC(W)           &kp LA(DOWN)        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&kp LS(LC(TAB))     &kp LC(TAB)        &kp LA(RIGHT)           &kp LA(LEFT_ARROW)  &kp LC(T)           &kp LG(LS(S))         &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                              &trans              &trans                &kp BACKSPACE          &kp ENTER         &trans             &trans             &trans        &kp HASH
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))   &kp LA(UP_ARROW)    &kp RS(RC(GREATER_THAN))  &kp RC(B)      &kp RC(U)      &kp CAPSLOCK  &kp INSERT
+&kp LC(F)           &kp LC(R)          &kp LC(S)               &kp LC(W)           &kp LA(DOWN)        &kp RS(RC(LESS_THAN))     &kp RC(C)      &kp RS(RC(C))  &kp RC(X)     &kp RC(A)
+&kp LS(LC(TAB))     &kp LC(TAB)        &kp LA(RIGHT)           &kp LA(LEFT_ARROW)  &kp LC(T)           &kp LG(LS(S))             &kp RG(H)      &kp RC(P)      &kp RS(HOME)  &kp RS(END)  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                              &trans              &trans                    &kp RS(RC(V))  &kp RC(V)      &kp HOME      &kp END      &kp RA(LEFT)      &kp RA(RIGHT)
             >;
 
             sensor-bindings =
