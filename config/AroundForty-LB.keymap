@@ -244,10 +244,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q                                &kp W   &kp E  &kp R  &kp T                     &kp Y                      &kp U                     &kp I                   &kp L            &kp P
-&AScrollLayerTapPrefer 8 A           &kp S   &kp D  &kp F  &kp G                     &kp H                      &kp J                     &kp K                   &kp O            &kp PERIOD
-&ZShiftTapPrefer LEFT_GUI BACKSPACE  &kp X   &kp C  &kp V  &kp B                     &trans                     &trans                    &kp N                   &kp M            &kp SLASH      &kp MINUS        &ZShiftTapPrefer RIGHT_GUI COMMA
-&lt 5 F11                            &kp F4                &lt_to_layer_0 1 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &mt RIGHT_ALT LANGUAGE_1  &lt_to_layer_0 7 SPACE  &mt RCTRL RG(Z)  &kp RG(RS(Z))  &kp EXCLAMATION  &kp QUESTION
+&kp Q                       &kp W   &kp E  &kp R  &kp T                     &kp Y                      &kp U                     &kp I                   &kp L                &kp P
+&AScrollLayerTapPrefer 8 A  &kp S   &kp D  &kp F  &kp G                     &kp H                      &kp J                     &kp K                   &kp O                &kp PERIOD
+&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B                     &trans                     &trans                    &kp N                   &kp M                &kp SLASH            &kp MINUS        &kp COMMA
+&lt 5 F11                   &kp F4                &lt_to_layer_0 1 ENTER    &mt LEFT_SHIFT LANGUAGE_2  &mt RIGHT_ALT LANGUAGE_1  &lt_to_layer_0 7 SPACE  &mt RIGHT_GUI RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
 
             sensor-bindings =
