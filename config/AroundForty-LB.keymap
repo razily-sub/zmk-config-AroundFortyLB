@@ -178,30 +178,6 @@
             label = "TO_LAYER_0";
         };
 
-        Custom_macro_BT0: Custom_macro_BT0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
-
-            label = "CUSTOM_MACRO_BT0";
-        };
-
-        Cutom_macro_BT1: Cutom_macro_BT1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 2>;
-
-            label = "Cutom_macro_BT1";
-        };
-
-        Cutom_macro_BT2: Cutom_macro_BT2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 4>;
-
-            label = "Cutom_macro_BT2";
-        };
-
         iPad_Globe: iPad_Globe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
