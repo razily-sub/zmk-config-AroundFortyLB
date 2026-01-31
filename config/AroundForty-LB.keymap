@@ -177,18 +177,6 @@
             bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-        iPad_Globe: iPad_Globe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp GLOBE>,
-                <&macro_press>,
-                <&kp UP_ARROW>,
-                <&macro_release>;
-
-            label = "IPAD_GLOBE";
-        };
     };
 
     //新たな動作を定義する
