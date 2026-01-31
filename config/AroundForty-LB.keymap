@@ -93,6 +93,9 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <2 3>;
             layers = <0>;
+            slow-release;
+            timeout-ms = <0>;
+            require-prior-idle-ms = <0>;
         };
 
         Mac_FullScreen {
@@ -184,6 +187,30 @@
             bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
 
             label = "BT0_LAYER0";
+        };
+
+        BT1_Layer2: BT1_Layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BT1_LAYER2";
+        };
+
+        BT2_Layer4: BT2_Layer4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 4>;
+
+            label = "BT2_LAYER4";
+        };
+
+        IOS_ControlMission: IOS_ControlMission {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp GLOBE &kp UP_ARROW>;
+
+            label = "IOS_CONTROLMISSION";
         };
     };
 
@@ -310,10 +337,10 @@
 
         iOS_Window_Editting {
             bindings = <
-&trans  &trans                &trans                 &trans           &trans         &trans     &trans  &trans  &trans  &trans
-&kp H   &kp LEFT              &kp RIGHT              &trans           &trans         &trans     &trans  &trans  &trans  &trans
-&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                        &trans         &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                 &trans               &trans         &trans     &trans  &trans  &trans  &trans
+&kp H   &kp LEFT              &kp RIGHT              &IOS_ControlMission  &trans         &trans     &trans  &trans  &trans  &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))      &kp LC(TAB)    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                                            &trans         &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -337,10 +364,10 @@
 
         Setting {
             bindings = <
-&trans        &trans        &trans        &trans        &trans    &bt BT_CLR  &trans          &trans  &trans  &bt BT_CLR_ALL
-&bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans    &trans      &trans          &trans  &trans  &trans
-&bt BT_SEL 4  &to 4         &to 2         &to 0         &trans    &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
-&bootloader   &sys_reset                                &trans    &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
+&trans        &trans       &trans       &trans       &trans    &bt BT_CLR  &trans          &trans  &trans  &bt BT_CLR_ALL
+&bt BT_SEL 3  &BT2_Layer4  &BT1_Layer2  &BT0_Layer0  &trans    &trans      &trans          &trans  &trans  &trans
+&bt BT_SEL 4  &to 4        &to 2        &to 0        &trans    &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
+&bootloader   &sys_reset                             &trans    &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
             >;
         };
     };
