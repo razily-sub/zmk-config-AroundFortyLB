@@ -209,6 +209,18 @@
 
             label = "NEW_MACRO";
         };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp GLOBE>,
+                <&macro_press>,
+                <&kp UP_ARROW>,
+                <&macro_release>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     //新たな動作を定義する
