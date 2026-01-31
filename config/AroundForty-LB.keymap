@@ -94,7 +94,7 @@
             key-positions = <2 3>;
             layers = <0>;
             slow-release;
-            timeout-ms = <0>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <0>;
         };
 
@@ -168,6 +168,13 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <2 3>;
             layers = <2>;
+            timeout-ms = <100>;
+        };
+
+        iOS_ControlMission {
+            bindings = <&iOS_ControlMission>;
+            key-positions = <2 3>;
+            layers = <4>;
         };
     };
 
@@ -205,10 +212,16 @@
             label = "BT2_LAYER4";
         };
 
-        IOS_ControlMission: IOS_ControlMission {
+        iOS_ControlMission: iOS_ControlMission {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp GLOBE &kp UP_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
 
             label = "IOS_CONTROLMISSION";
         };
@@ -337,10 +350,10 @@
 
         iOS_Window_Editting {
             bindings = <
-&trans  &trans                &trans                 &trans               &trans         &trans     &trans  &trans  &trans  &trans
-&kp H   &kp LEFT              &kp RIGHT              &IOS_ControlMission  &trans         &trans     &trans  &trans  &trans  &trans
-&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))      &kp LC(TAB)    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                            &trans         &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                 &trans           &trans         &trans     &trans  &trans  &trans  &trans
+&kp H   &kp LEFT              &kp RIGHT              &trans           &trans         &trans     &trans  &trans  &trans  &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                                        &trans         &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
