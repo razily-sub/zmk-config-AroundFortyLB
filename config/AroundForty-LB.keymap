@@ -93,8 +93,7 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <2 3>;
             layers = <0>;
-            slow-release;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <0>;
         };
 
@@ -168,14 +167,14 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <2 3>;
             layers = <2>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
 
         iOS_ControlMission {
             bindings = <&iOS_ControlMission>;
             key-positions = <2 3>;
             layers = <4>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
     };
 
@@ -227,11 +226,46 @@
             label = "IOS_CONTROLMISSION";
         };
 
-        iOSDeskTop: iOSDeskTop {
+        iOS_DeskTop: iOS_DeskTop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp H>;
-            label = "IOSDESKTOP";
+            bindings =
+                <&macro_press>,
+                <&kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_DESKTOP";
+        };
+
+        iOS_RightWay: iOS_RightWay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_RIGHTWAY";
+        };
+
+        iOS_LeftWay: iOS_LeftWay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_LEFTWAY";
         };
     };
 
@@ -349,19 +383,19 @@
 
         IOS_Default {
             bindings = <
-&trans       &trans               &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
-&trans       &trans               &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
-&trans       &trans               &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&iOSDeskTop  &iOS_ControlMission                  &lt 5 ENTER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&iOS_DeskTop  &trans                  &lt 5 ENTER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         iOS_Window_Editting {
             bindings = <
-&trans           &trans       &trans                &trans                 &trans    &trans     &trans  &trans  &trans  &trans
-&kp H            &kp LEFT     &kp RIGHT             &iOS_ControlMission    &trans    &trans     &trans  &trans  &trans  &trans
-&kt LC(LS(TAB))  &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans                                                    &trans    &kp GLOBE  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans       &iOS_LeftWay          &iOS_RightWay          &trans    &trans  &trans  &trans  &trans  &trans
+&trans           &trans       &trans                &trans                 &trans    &trans  &trans  &trans  &trans  &trans
+&kt LC(LS(TAB))  &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans                                                    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
