@@ -231,7 +231,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
                 <&macro_tap>,
                 <&kp H>,
                 <&macro_release>,
@@ -245,7 +245,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
@@ -259,7 +259,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
@@ -393,7 +393,7 @@
         iOS_Window_Editting {
             bindings = <
 &trans           &trans       &iOS_LeftWay          &iOS_RightWay          &trans    &trans  &trans  &trans  &trans  &trans
-&trans           &trans       &trans                &iOS_RightWay          &trans    &trans  &trans  &trans  &trans  &trans
+&trans           &trans       &trans                &iOS_ControlMission    &trans    &trans  &trans  &trans  &trans  &trans
 &kt LC(LS(TAB))  &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans           &trans                                                    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
