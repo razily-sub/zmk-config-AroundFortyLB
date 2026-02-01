@@ -93,7 +93,7 @@
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <2 3>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <0>;
         };
 
@@ -167,14 +167,14 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <2 3>;
             layers = <2>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         iOS_ControlMission {
             bindings = <&iOS_ControlMission>;
             key-positions = <2 3>;
             layers = <4>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
     };
 
@@ -393,7 +393,7 @@
         iOS_Window_Editting {
             bindings = <
 &trans           &trans       &iOS_LeftWay          &iOS_RightWay          &trans    &trans  &trans  &trans  &trans  &trans
-&trans           &trans       &trans                &trans                 &trans    &trans  &trans  &trans  &trans  &trans
+&trans           &trans       &trans                &iOS_RightWay          &trans    &trans  &trans  &trans  &trans  &trans
 &kt LC(LS(TAB))  &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans           &trans                                                    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
