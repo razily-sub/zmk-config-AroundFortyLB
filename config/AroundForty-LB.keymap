@@ -312,7 +312,7 @@
             bindings =
                 <&macro_release>,
                 <&kp LEFT_GUI>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp ENTER>;
 
             label = "MOVEAPP_RELEASE";
