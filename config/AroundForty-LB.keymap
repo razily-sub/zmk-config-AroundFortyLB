@@ -315,7 +315,7 @@
         MoveApp_Release: MoveApp_Release {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LGUI>;
+            bindings = <&macro_release &kp LGUI>;
 
             label = "MOVEAPP_RELEASE";
         };
