@@ -382,10 +382,10 @@
 
         Win_Window-Editting {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))   &kp LA(UP_ARROW)    &kp RS(RC(GREATER_THAN))  &kp RC(B)   &kp RC(U)  &kp CAPSLOCK     &kp INSERT
-&kp LC(F)           &kp LC(R)          &kp LC(S)               &kp LC(W)           &kp LA(DOWN)        &kp RS(RC(LESS_THAN))     &kp HOME    &kp END    &kp RA(LEFT)     &kp RA(RIGHT)
-&kp LS(LC(TAB))     &kp LC(TAB)        &kp LA(RIGHT)           &kp LA(LEFT_ARROW)  &kp LC(T)           &kp LG(LS(S))             &kp RA(F4)  &kp RC(A)  &kp RS(HOME)     &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                              &trans              &trans                    &kp RC(X)   &kp RC(C)  &TapDance_Paste  &kp RG(V)      &kp RC(P)         &kp RG(H)
+&kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LA(LS(TAB))  &kp LA(TAB)        &kp LC(T)           &kp RS(RC(GREATER_THAN))  &kp RC(B)   &kp RC(U)  &kp CAPSLOCK     &kp INSERT
+&kp LA(LEFT)      &kp LA(RIGHT)      &kp LC(LS(TAB))  &kp LC(TAB)        &kp LA(UP_ARROW)    &kp RS(RC(LESS_THAN))     &kp HOME    &kp END    &kp RA(LEFT)     &kp RA(RIGHT)
+&kp LC(S)         &kp F5             &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LA(DOWN)        &kp LC(F)                 &kp RA(F4)  &kp RC(A)  &kp RS(HOME)     &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
+&kp LG(LEFT)      &kp LG(RIGHT)                                          &trans              &kp LS(LG(S))             &kp RC(X)   &kp RC(C)  &TapDance_Paste  &kp RG(V)      &kp RC(P)         &kp RG(H)
             >;
 
             sensor-bindings =
