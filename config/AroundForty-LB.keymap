@@ -289,23 +289,16 @@
             tap-ms = <20>;
         };
 
-        tap_dance: tap_dance {
+        tap_dance_copy: tap_dance_copy {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE";
+            label = "TAP_DANCE_COPY";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1>, <&kp LANGUAGE_2>;
+            bindings = <&kp RG(C)>, <&kp RG(RS(C))>;
         };
 
-        TapDanceGUI: TapDanceGUI {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCEGUI";
-            #binding-cells = <0>;
-            bindings = <&mt LEFT_GUI LANGUAGE_1>, <&kp LANGUAGE_2>;
-        };
-
-        ZShiftTapPrefer: ZShiftTapPrefer {
+        Tap_Hold_Prefer: Tap_Hold_Prefer {
             compatible = "zmk,behavior-hold-tap";
-            label = "ZSHIFTTAPPREFER";
+            label = "TAP_HOLD_PREFER";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -344,10 +337,10 @@
 
         Mac-Window_Editting {
             bindings = <
-&kp LA(LG(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(LEFT)          &kp LC(RIGHT)          &kp LG(UP_ARROW)    &kp RG(RS(GREATER_THAN))  &kp RG(B)          &kp RG(U)      &kp CAPSLOCK  &kp INSERT
-&kp LG(F)             &kp LG(R)              &kp LG(S)             &kp LG(W)              &kp LG(DOWN)        &kp RG(RS(LESS_THAN))     &kp RG(C)          &kp RS(RG(C))  &kp RG(X)     &kp RG(A)
-&kp LG(LA(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(T)           &kp LG(LS(NUMBER_4))      &kp RA(RC(RG(D)))  &kp RG(P)      &kp RS(HOME)  &kp RS(END)  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
-&kp LC(PAGE_UP)       &kp LC(PAGE_DOWN)                                                   &trans              &trans                    &kp RS(RG(V))      &kp RG(V)      &kp HOME      &kp END      &kp RA(LEFT)      &kp RA(RIGHT)
+&kp LA(LG(LC(LEFT)))  &kp LG(LA(LC(RIGHT)))  &kp LC(LEFT)          &kp LC(RIGHT)          &kp LG(UP_ARROW)    &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
+&kp LG(F)             &kp LG(R)              &kp LG(S)             &kp LG(W)              &kp LG(DOWN)        &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
+&kp LG(LA(LEFT))      &kp LG(LA(RIGHT))      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(T)           &kp LG(LS(NUMBER_4))      &kp RC(F5)  &kp RG(A)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
+&kp LC(PAGE_UP)       &kp LC(PAGE_DOWN)                                                   &trans              &trans                    &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(P)         &kp RA(RC(RG(D)))
             >;
 
             sensor-bindings =
@@ -401,10 +394,10 @@
 
         Scroll {
             bindings = <
-&trans  &kp LC(F5)  &kp PAGE_UP    &kp LG(KP_PLUS)  &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
-&trans  &kp LCTRL   &kp PAGE_DOWN  &kp LG(MINUS)    &trans    &trans  &kp C_VOLUME_DOWN  &kt C_BRIGHTNESS_DEC  &trans      &trans
-&trans  &trans      &trans         &kp LG(N0)       &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
-&trans  &trans                                      &trans    &trans  &trans             &trans                &trans      &trans  &trans  &trans
+&trans  &trans     &kp PAGE_UP    &kp LG(KP_PLUS)  &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
+&trans  &kp LCTRL  &kp PAGE_DOWN  &kp LG(MINUS)    &trans    &trans  &kp C_VOLUME_DOWN  &kt C_BRIGHTNESS_DEC  &trans      &trans
+&trans  &trans     &trans         &kp LG(N0)       &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
+&trans  &trans                                     &trans    &trans  &trans             &trans                &trans      &trans  &trans  &trans
             >;
         };
 
