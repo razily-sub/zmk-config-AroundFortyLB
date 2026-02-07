@@ -172,13 +172,13 @@
 
         CloseTab {
             bindings = <&kp LG(W)>;
-            key-positions = <20 21>;
+            key-positions = <0 1>;
             layers = <1 3>;
         };
 
         CloseApp {
             bindings = <&kp LG(Q)>;
-            key-positions = <0 1>;
+            key-positions = <20 21>;
             layers = <1 3>;
         };
 
@@ -289,13 +289,7 @@
         MoveAPP_Right: MoveAPP_Right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LEFT_GUI>;
+            bindings = <&macro_press>, <&kp LEFT_GUI>, <&macro_tap>, <&kp TAB>;
 
             label = "MOVEAPP_RIGHT";
         };
@@ -307,11 +301,17 @@
                 <&macro_press>,
                 <&kp LEFT_GUI>,
                 <&macro_tap>,
-                <&kp LS(TAB)>,
-                <&macro_release>,
-                <&kp LEFT_GUI>;
+                <&kp LS(TAB)>;
 
             label = "MOVEAPP_LEFT";
+        };
+
+        MoveApp_Release: MoveApp_Release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release>, <&kp LEFT_GUI>;
+
+            label = "MOVEAPP_RELEASE";
         };
     };
 
@@ -368,6 +368,20 @@
             #binding-cells = <0>;
             bindings = <&kp RC(V)>, <&kp RS(RC(V))>;
         };
+
+        TapDance_MoveApp_Left: TapDance_MoveApp_Left {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_MOVEAPP_LEFT";
+            #binding-cells = <0>;
+            bindings = <&TapDance_MoveApp_Left>, <&MoveApp_Release>;
+        };
+
+        TapDance_MoveApp_Right: TapDance_MoveApp_Right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_MOVEAPP_RIGHT";
+            #binding-cells = <0>;
+            bindings = <&MoveAPP_Right>, <&MoveApp_Release>;
+        };
     };
 
     //キーマップ設定
@@ -390,10 +404,10 @@
 
         Mac-Window_Editting {
             bindings = <
-&kp LC(LEFT)          &kp LC(RIGHT)          &MoveAPP_Right    &MoveApp_Left      &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
-&kp LG(S)             &kp LG(R)              &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LG(DOWN)        &kp LG(F)                 &kp RC(F5)  &kp RG(A)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
-&kp LC(LA(LG(LEFT)))  &kp LC(LA(LG(RIGHT)))                                       &trans              &kp LS(LG(NUMBER_4))      &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(P)         &kp RA(RC(RG(D)))
+&kp LC(LEFT)          &kp LC(RIGHT)          &TapDance_MoveApp_Left  &TapDance_MoveApp_Right  &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))        &kp LG(LA(RIGHT))        &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
+&kp LG(S)             &kp LG(R)              &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)        &kp LG(DOWN)        &kp LG(F)                 &kp RC(F5)  &kp RG(A)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
+&kp LC(LA(LG(LEFT)))  &kp LC(LA(LG(RIGHT)))                                                   &trans              &kp LS(LG(NUMBER_4))      &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(P)         &kp RA(RC(RG(D)))
             >;
 
             sensor-bindings =
