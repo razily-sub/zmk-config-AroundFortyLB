@@ -310,10 +310,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
-                <&kp ENTER>,
                 <&macro_release>,
-                <&kp LEFT_GUI>;
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp ENTER>;
 
             label = "MOVEAPP_RELEASE";
         };
@@ -428,10 +428,10 @@
 
         Mac-Window_Editting {
             bindings = <
-&kp LC(LEFT)          &kp LC(RIGHT)          &Hold_MoveApp_Left 0 0  &Hold_MoveApp_Right 0 0  &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))        &kp LG(LA(RIGHT))        &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
-&kp LG(S)             &kp LG(R)              &kp LC(PAGE_UP)         &kp LC(PAGE_DOWN)        &kp LG(DOWN)        &kp LG(F)                 &kp RC(F5)  &kp RG(A)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
-&kp LC(LA(LG(LEFT)))  &kp LC(LA(LG(RIGHT)))                                                   &trans              &kp LS(LG(NUMBER_4))      &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(P)         &kp RA(RC(RG(D)))
+&kp LC(LEFT)          &kp LC(RIGHT)          &kp LS(TAB)       &Hold_MoveApp_Right 0 0  &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))        &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
+&kp LG(S)             &kp LG(R)              &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)        &kp LG(DOWN)        &kp LG(F)                 &kp RC(F5)  &kp RG(A)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
+&kp LC(LA(LG(LEFT)))  &kp LC(LA(LG(RIGHT)))                                             &trans              &kp LS(LG(NUMBER_4))      &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(P)         &kp RA(RC(RG(D)))
             >;
 
             sensor-bindings =
