@@ -289,7 +289,13 @@
         MoveAPP_Right: MoveAPP_Right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_GUI>, <&macro_tap>, <&kp TAB>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
 
             label = "MOVEAPP_RIGHT";
         };
@@ -301,7 +307,9 @@
                 <&macro_press>,
                 <&kp LEFT_GUI>,
                 <&macro_tap>,
-                <&kp LS(TAB)>;
+                <&kp LS(TAB)>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
 
             label = "MOVEAPP_LEFT";
         };
