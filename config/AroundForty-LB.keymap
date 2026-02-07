@@ -295,7 +295,7 @@
         MoveAPP_Right: MoveAPP_Right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_GUI>, <&macro_tap>, <&kp TAB>;
+            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp TAB>;
 
             label = "MOVEAPP_RIGHT";
         };
@@ -315,7 +315,7 @@
         MoveApp_Release: MoveApp_Release {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LEFT_GUI>;
+            bindings = <&macro_release>, <&kp LGUI>;
 
             label = "MOVEAPP_RELEASE";
         };
