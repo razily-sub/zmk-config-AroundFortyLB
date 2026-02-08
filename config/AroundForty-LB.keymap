@@ -196,7 +196,7 @@
         };
 
         MoveApp_Release {
-            bindings = <&kt LEFT_GUI>;
+            bindings = <&kt LGUI>;
             key-positions = <12 13>;
             layers = <1>;
         };
