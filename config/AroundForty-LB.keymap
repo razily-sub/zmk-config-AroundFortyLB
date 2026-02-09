@@ -408,6 +408,8 @@
             label = "JAPENG_HOLDSHIFT";
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT LANGUAGE_2>, <&kp LANGUAGE_1>;
+
+            tapping-term-ms = <250>;
         };
     };
 
