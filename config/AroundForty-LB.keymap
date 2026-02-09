@@ -176,6 +176,11 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        AppMove {
+            bindings = <&kt LGUI>;
+            key-positions = <13 12>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
@@ -396,7 +401,7 @@
             bindings = <
 &kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                    &kp U                       &kp I                   &kp L                &kp P
 &AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                    &kp J                       &kp K                   &kp O                &kp PERIOD
-&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &kt LGUI                 &trans                      &kp N                   &kp M                &kp SLASH            &kp MINUS        &kp COMMA
+&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &trans                   &trans                      &kp N                   &kp M                &kp SLASH            &kp MINUS        &kp COMMA
 &kp F11                     &kp F4                &lt 1 ENTER    &mt LEFT_GUI LANGUAGE_1  &mt RIGHT_SHIFT LANGUAGE_2  &lt_to_layer_0 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
 
@@ -408,7 +413,7 @@
         Mac-Window_Editting {
             bindings = <
 &kp LC(LEFT)          &kp LC(RIGHT)          &kp LC(UP_ARROW)  &kp LC(LG(F))      &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LA(LG(LEFT))  &kp LG(LA(RIGHT))  &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LS(TAB)       &kp TAB            &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
 &kp LG(S)             &kp LG(R)              &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LG(DOWN)        &kp LG(F)                 &kp RC(F5)  &kp RG(P)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))      &kp RS(RA(RIGHT))
 &kp LC(LA(LG(LEFT)))  &kp LC(LA(LG(RIGHT)))                                       &trans              &trans                    &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(RS(NUMBER_4))  &kp RA(RC(RG(D)))
             >;
