@@ -407,9 +407,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "JAPENG_HOLDSHIFT";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT LANGUAGE_2>, <&kp LANGUAGE_1>;
-
-            tapping-term-ms = <250>;
+            bindings = <&kp LANGUAGE_2>, <&mt LEFT_SHIFT LANGUAGE_1>;
         };
     };
 
@@ -420,10 +418,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y           &kp U                       &kp I                   &kp L                &kp P
-&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H           &kp J                       &kp K                   &kp O                &kp PERIOD
-&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &trans          &trans                      &kp N                   &kp M                &kp SLASH                &kp MINUS        &kp COMMA
-&kp F11                     &kp F4                &lt 1 ENTER    &kp LANGUAGE_1  &mt RIGHT_SHIFT LANGUAGE_2  &lt_to_layer_0 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RIGHT_GUI RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
+&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y           &kp U              &kp I                   &kp L                &kp P
+&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H           &kp J              &kp K                   &kp O                &kp PERIOD
+&kp BACKSPACE               &kp X   &kp C  &kp V  &kp B          &trans          &trans             &kp N                   &kp M                &kp SLASH                &kp MINUS        &kp COMMA
+&kp F11                     &kp F4                &lt 1 ENTER    &kp LANGUAGE_1  &JapEng_HoldShift  &lt_to_layer_0 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RIGHT_GUI RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
 
             sensor-bindings =
@@ -474,7 +472,7 @@
             bindings = <
 &kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                    &kp U              &kp I        &kp L                &kp P
 &AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                    &kp J              &kp K        &kp O                &kp DOT
-&kp BSPC                    &kp X   &kp C  &kp V  &kp B          &kp LEFT_GUI             &trans             &kp M        &kp M                &kp SLASH            &kp MINUS        &kp COMMA
+&kp BSPC                    &kp X   &kp C  &kp V  &kp B          &kp LEFT_GUI             &trans             &kp N        &kp M                &kp SLASH            &kp MINUS        &kp COMMA
 &iOS_DeskTop                &trans                &lt 5 ENTER    &mt LEFT_GUI LANGUAGE_1  &JapEng_HoldShift  &lt 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
         };
