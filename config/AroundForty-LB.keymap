@@ -183,7 +183,7 @@
 
         Mac_AppClose {
             bindings = <&kt LEFT_GUI>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             layers = <1>;
             timeout-ms = <0>;
         };
