@@ -161,7 +161,7 @@
         };
 
         MacFullScreen {
-            bindings = <&kp LS(LG(F))>;
+            bindings = <&kp LG(LC(F))>;
             key-positions = <1 2>;
             layers = <0>;
             timeout-ms = <20>;
@@ -185,27 +185,24 @@
             bindings = <&kt LEFT_GUI>;
             key-positions = <2 3>;
             layers = <1>;
-            timeout-ms = <20>;
+            timeout-ms = <0>;
         };
 
         Win_MoveClose {
             bindings = <&kt LEFT_ALT>;
             key-positions = <2 3>;
             layers = <3>;
-            timeout-ms = <20>;
         };
 
         iOS_MoveClose {
             bindings = <&kt LEFT_GUI>;
             key-positions = <2 3>;
             layers = <5>;
-            timeout-ms = <20>;
         };
 
         iOS_FullScreen {
-            bindings = <&kp LS(LG(F))>;
+            bindings = <&kp LG(LC(F))>;
             key-positions = <1 2>;
-            timeout-ms = <20>;
             layers = <4>;
         };
 
