@@ -183,8 +183,8 @@
 
         Mac_AppClose {
             bindings = <&kt LEFT_GUI>;
-            key-positions = <12 13>;
-            layers = <1>;
+            key-positions = <2 3>;
+            layers = <1 5>;
             timeout-ms = <0>;
         };
 
@@ -192,12 +192,6 @@
             bindings = <&kt LEFT_ALT>;
             key-positions = <2 3>;
             layers = <3>;
-        };
-
-        iOS_MoveClose {
-            bindings = <&kt LEFT_GUI>;
-            key-positions = <2 3>;
-            layers = <5>;
         };
 
         iOS_FullScreen {
