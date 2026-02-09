@@ -402,6 +402,13 @@
             tapping-term-ms = <240>;
             flavor = "tap-preferred";
         };
+
+        JapEng_HoldShift: JapEng_HoldShift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "JAPENG_HOLDSHIFT";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_SHIFT LANGUAGE_2>, <&kp LANGUAGE_1>;
+        };
     };
 
     //キーマップ設定
@@ -463,10 +470,10 @@
 
         IOS_Default {
             bindings = <
-&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                    &kp U                       &kp I        &kp L                &kp P
-&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                    &kp J                       &kp K        &kp O                &kp DOT
-&kp BSPC                    &kp X   &kp C  &kp V  &kp B          &kp LEFT_GUI             &trans                      &kp M        &kp M                &kp SLASH            &kp MINUS        &kp COMMA
-&iOS_DeskTop                &trans                &lt 5 ENTER    &mt LEFT_GUI LANGUAGE_1  &mt RIGHT_SHIFT LANGUAGE_2  &lt 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
+&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y                    &kp U              &kp I        &kp L                &kp P
+&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H                    &kp J              &kp K        &kp O                &kp DOT
+&kp BSPC                    &kp X   &kp C  &kp V  &kp B          &kp LEFT_GUI             &trans             &kp M        &kp M                &kp SLASH            &kp MINUS        &kp COMMA
+&iOS_DeskTop                &trans                &lt 5 ENTER    &mt LEFT_GUI LANGUAGE_1  &JapEng_HoldShift  &lt 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RCTRL RS(RG(Z))  &kp EXCLAMATION  &kp QUESTION
             >;
         };
 
