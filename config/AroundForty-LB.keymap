@@ -158,6 +158,40 @@
             key-positions = <1 2>;
             layers = <4 5>;
         };
+
+        MoveAppClose {
+            bindings = <&MoveApp_Release>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        MacControlMission {
+            bindings = <&kp LC(UP_ARROW)>;
+            key-positions = <2 3>;
+            layers = <0>;
+            timeout-ms = <20>;
+        };
+
+        MacFullScreen {
+            bindings = <&kp LS(LG(F))>;
+            key-positions = <1 2>;
+            layers = <0>;
+            timeout-ms = <20>;
+        };
+
+        WinControlMission {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <2 3>;
+            timeout-ms = <20>;
+            layers = <2>;
+        };
+
+        WinFullScreen {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <1 2>;
+            timeout-ms = <20>;
+            layers = <2>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
