@@ -22,7 +22,7 @@
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <28 29>;
-            layers = <0 2 4>;
+            layers = <0 2 4 1 3 5>;
             timeout-ms = <20>;
         };
 
@@ -72,7 +72,7 @@
         Tab {
             bindings = <&kp TAB>;
             key-positions = <29 30>;
-            layers = <0 2 4>;
+            layers = <0 2 4 1 3 5>;
             timeout-ms = <20>;
         };
 
@@ -179,19 +179,6 @@
             key-positions = <1 2>;
             timeout-ms = <20>;
             layers = <2>;
-        };
-
-        Mac_AppClose {
-            bindings = <&kt LEFT_GUI>;
-            key-positions = <2 3>;
-            layers = <1 5>;
-            timeout-ms = <0>;
-        };
-
-        Win_MoveClose {
-            bindings = <&kt LEFT_ALT>;
-            key-positions = <2 3>;
-            layers = <3>;
         };
 
         iOS_FullScreen {
@@ -437,7 +424,7 @@
 
         Mac-Window_Editting {
             bindings = <
-&kp LC(LEFT)          &kp LC(RIGHT)          &kp LS(TAB)       &kp TAB            &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
+&kp LC(LEFT)          &kp LC(RIGHT)          &kp LEFT_GUI      &kp TAB            &kp LG(T)           &kp RG(RS(GREATER_THAN))  &kp RG(B)   &kp RG(U)        &kp CAPSLOCK  &kp INSERT
 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LA(LG(LEFT))  &kp LG(LA(RIGHT))  &kp LG(UP_ARROW)    &kp RG(RS(LESS_THAN))     &kp HOME    &kp END          &kp RA(LEFT)  &kp RA(RIGHT)
 &kp LG(S)             &kp LG(R)              &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LG(DOWN)        &kp LG(F)                 &kp RC(F5)  &kp RG(A)        &kp RS(HOME)  &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
 &kp LC(LA(LG(LEFT)))  &kp LC(LA(LG(RIGHT)))                                       &trans              &kp LS(LG(NUMBER_4))      &kp RG(X)   &tap_dance_copy  &kp RG(V)     &kp RS(RG(V))  &kp RG(P)         &kp RA(RC(RG(D)))
@@ -463,7 +450,7 @@
 
         Win_Window-Editting {
             bindings = <
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LS(TAB)      &kp TAB            &kp LC(T)           &kp RS(RC(GREATER_THAN))  &kp RC(B)   &kp RC(U)  &kp CAPSLOCK     &kp INSERT
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LEFT_ALT     &kp TAB            &kp LC(T)           &kp RS(RC(GREATER_THAN))  &kp RC(B)   &kp RC(U)  &kp CAPSLOCK     &kp INSERT
 &kp LA(LEFT)      &kp LA(RIGHT)      &kp LS(LC(TAB))  &kp LC(TAB)        &kp LA(UP_ARROW)    &kp RS(RC(LESS_THAN))     &kp HOME    &kp END    &kp RA(LEFT)     &kp RA(RIGHT)
 &kp LC(S)         &kp F5             &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LA(DOWN)        &kp LC(F)                 &kp RA(F4)  &kp RC(A)  &kp RS(HOME)     &kp RS(END)    &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))
 &kp LG(LEFT)      &kp LG(RIGHT)                                          &trans              &kp LS(LG(S))             &kp RC(X)   &kp RC(C)  &TapDance_Paste  &kp RG(V)      &kp RC(P)         &kp RG(H)
@@ -485,7 +472,7 @@
 
         iOS_Window_Editting {
             bindings = <
-&iOS_LeftWay          &iOS_RightWay          &kp LS(TAB)           &kp TAB                &trans    &trans  &trans  &trans  &trans  &trans
+&iOS_LeftWay          &iOS_RightWay          &kp LEFT_GUI          &kp TAB                &trans    &trans  &trans  &trans  &trans  &trans
 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))       &kp LC(TAB)            &trans    &trans  &trans  &trans  &trans  &trans
 &kt LC(LS(TAB))       &kp LC(TAB)            &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans                &trans                                                              &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
