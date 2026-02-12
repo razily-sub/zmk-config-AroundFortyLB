@@ -312,7 +312,7 @@
         ControlMission: ControlMission {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp>;
+            bindings = <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp UP_ARROW>;
             label = "CONTROLMISSION";
         };
     };
@@ -481,10 +481,10 @@
 
         iOS_Window_Editting {
             bindings = <
-&iOS_LeftWay          &iOS_RightWay          &kp LEFT_GUI          &kp TAB                &trans    &trans  &trans  &trans  &trans  &trans
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))       &kp LC(TAB)            &trans    &trans  &trans  &trans  &trans  &trans
-&kt LC(LS(TAB))       &kp LC(TAB)            &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans                &trans                                                              &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&iOS_LeftWay          &iOS_RightWay          &kp LEFT_GUI          &kp TAB                &trans             &trans  &trans  &trans  &trans  &trans
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))       &kp LC(TAB)            &ControlMission    &trans  &trans  &trans  &trans  &trans
+&kt LC(LS(TAB))       &kp LC(TAB)            &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans                                                              &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
