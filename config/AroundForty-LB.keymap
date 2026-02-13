@@ -483,10 +483,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans     &kp PAGE_UP    &kp LG(PLUS)   &msc MOVE_Y(10)     &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
-&trans  &kp LCTRL  &kp PAGE_DOWN  &kp LG(MINUS)  &msc MOVE_Y(-10)    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
-&trans  &trans     &trans         &kp LG(N0)     &trans              &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
-&trans  &trans                                   &trans              &trans  &trans             &trans                &trans      &trans  &trans  &trans
+&trans  &trans     &msc MOVE_Y(5)   &kp LG(PLUS)   &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
+&trans  &kp LCTRL  &msc MOVE_Y(-5)  &kp LG(MINUS)  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
+&trans  &trans     &trans           &kp LG(N0)     &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
+&trans  &trans                                     &trans    &trans  &trans             &trans                &trans      &trans  &trans  &trans
             >;
         };
 
