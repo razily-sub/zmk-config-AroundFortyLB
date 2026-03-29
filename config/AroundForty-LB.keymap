@@ -57,6 +57,7 @@
             bindings = <&mkp MB1>;
             key-positions = <12 13>;
             layers = <0 2 4 6 7 8>;
+            timeout-ms = <20>;
         };
 
         NumLayerToggle {
@@ -353,7 +354,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <230>;
             flavor = "tap-preferred";
         };
 
@@ -404,6 +405,13 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2>, <&mt LEFT_SHIFT LANGUAGE_1>;
         };
+
+        TapDance_JapEng: TapDance_JapEng {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_JAPENG";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
+        };
     };
 
     //キーマップ設定
@@ -413,10 +421,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y          &kp U              &kp I                   &kp L                &kp P
-&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H          &kp J              &kp K                   &kp O                &kp PERIOD
-&kp Z                       &kp X   &kp C  &kp V  &kp B          &trans         &trans             &kp N                   &kp M                &kp SLASH                &kp MINUS              &kp COMMA
-&kp F11                     &kp F4                &lt 1 ENTER    &kp BACKSPACE  &JapEng_HoldShift  &lt_to_layer_0 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RIGHT_GUI RS(RG(Z))  &mt RCTRL EXCLAMATION  &kp QUESTION
+&kp Q                       &kp W   &kp E  &kp R  &kp T          &kp Y          &kp U             &kp I                   &kp L                &kp P
+&AScrollLayerTapPrefer 6 A  &kp S   &kp D  &kp F  &kp G          &kp H          &kp J             &kp K                   &kp O                &mt RIGHT_SHIFT PERIOD
+&kp Z                       &kp X   &kp C  &kp V  &kp B          &trans         &trans            &kp N                   &kp M                &kp SLASH                &kp MINUS              &kp COMMA
+&kp F11                     &kp F4                &lt 1 ENTER    &kp BACKSPACE  &TapDance_JapEng  &lt_to_layer_0 7 SPACE  &mt RIGHT_ALT RG(Z)  &mt RIGHT_GUI RS(RG(Z))  &mt RCTRL EXCLAMATION  &kp QUESTION
             >;
 
             sensor-bindings =
