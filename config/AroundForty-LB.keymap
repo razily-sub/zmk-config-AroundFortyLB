@@ -404,13 +404,6 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2>, <&mt LEFT_SHIFT LANGUAGE_1>;
         };
-
-        TapDance_JapEng: TapDance_JapEng {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_JAPENG";
-            #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
-        };
     };
 
     //キーマップ設定
