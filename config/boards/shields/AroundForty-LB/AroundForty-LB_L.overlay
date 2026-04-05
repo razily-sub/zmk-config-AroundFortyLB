@@ -1,4 +1,6 @@
 #include "AroundForty-LB.dtsi"
+#include <dt-bindings/zmk/input_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &kscan0 {
         col-gpios
