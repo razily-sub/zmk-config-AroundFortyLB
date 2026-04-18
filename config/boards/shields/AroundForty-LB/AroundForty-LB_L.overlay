@@ -58,9 +58,10 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-y;
-
+        scroll-layers = <6>; 
+        
         /* 未定義項目の削除 */
         // automouse-layer = <7>;
-        scroll-layers = <6>; 
+        
     };
 };
