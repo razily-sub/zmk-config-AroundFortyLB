@@ -61,6 +61,6 @@
 
         /* 未定義項目の削除 */
         // automouse-layer = <7>;
-        // scroll-layers = <6>; 
+        scroll-layers = <6>; 
     };
 };
