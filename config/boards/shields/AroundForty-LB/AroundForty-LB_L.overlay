@@ -55,8 +55,8 @@
 
         /* 必須項目の追加 */
         evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
+        x-input-code = <INPUT_REL_Y>;
+        y-input-code = <INPUT_REL_X>;
 
         /* 未定義項目の削除 */
         // automouse-layer = <7>;
