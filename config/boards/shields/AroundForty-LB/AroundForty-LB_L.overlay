@@ -21,10 +21,12 @@
         y-codes = <INPUT_REL_WHEEL>;
     };
 
-    trackball_listener {
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
         input-processors = <&zip_scroll_transform 0>;
+
         scroll-layers = <6>;
     };
 };
