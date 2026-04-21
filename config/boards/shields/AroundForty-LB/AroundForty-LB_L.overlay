@@ -13,11 +13,21 @@
 };
 
 / {
+    /* スクロール変換プロセッサの定義を追加 */
+    /* これがないと "undefined node label 'zip_scroll_transform'" エラーになります */
+    zip_scroll_transform: zip_scroll_transform {
+        compatible = "zmk,input-processor-transform";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        x-codes = <INPUT_REL_HWHEEL>;
+        y-codes = <INPUT_REL_WHEEL>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* レイヤー6がアクティブな時だけスクロール(REL_HWHEEL)に変換する */
+        /* レイヤー6がアクティブな時だけスクロールに変換する */
         input-processors = <&zip_scroll_transform>;
         scroll-layers = <6>;
     };
@@ -57,14 +67,12 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        /* 必須項目の追加 */
+        /* 必須項目 */
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-y;
         
-        /* 未定義項目の削除 */
-        // automouse-layer = <7>;
-        
+        /* ここには scroll-layers を書かない（listener側で設定） */
     };
 };
