@@ -1,6 +1,5 @@
 #include "AroundForty-LB.dtsi"
-#include <dt-bindings/zmk/input_transform.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
 
 &kscan0 {
     col-gpios
@@ -13,21 +12,14 @@
 };
 
 / {
-    zip_scroll_transform: zip_scroll_transform {
-        compatible = "zmk,input-processor-transform";
-        #input-processor-cells = <1>;
-        type = <INPUT_EV_REL>;
-        x-codes = <INPUT_REL_HWHEEL>;
-        y-codes = <INPUT_REL_WHEEL>;
-    };
-
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_scroll_transform 0>;
-
-        scroll-layers = <6>;
+        scroller {
+            layers = <6>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
 
@@ -65,12 +57,12 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        /* 必須項目 */
+        /* Trackball movement axes */
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-y;
-        
-        /* ここには scroll-layers を書かない（listener側で設定） */
     };
 };
+
+
