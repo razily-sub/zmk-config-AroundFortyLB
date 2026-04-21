@@ -9,6 +9,12 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_POINTING
+    default y
+
+config SPI
+    default y
+
 endif
 
 if SHIELD_AROUNDFORTY_LB_R
