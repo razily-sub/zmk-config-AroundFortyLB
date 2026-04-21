@@ -16,6 +16,10 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        /* レイヤー6がアクティブな時だけスクロール(REL_HWHEEL)に変換する */
+        input-processors = <&zip_scroll_transform>;
+        scroll-layers = <6>;
     };
 };
 
@@ -58,7 +62,6 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-y;
-        scroll-layers = <6>; 
         
         /* 未定義項目の削除 */
         // automouse-layer = <7>;
