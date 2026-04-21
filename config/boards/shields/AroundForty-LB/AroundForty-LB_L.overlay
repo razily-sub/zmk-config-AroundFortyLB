@@ -13,8 +13,6 @@
 };
 
 / {
-    /* スクロール変換プロセッサの定義を追加 */
-    /* これがないと "undefined node label 'zip_scroll_transform'" エラーになります */
     zip_scroll_transform: zip_scroll_transform {
         compatible = "zmk,input-processor-transform";
         #input-processor-cells = <1>;
@@ -26,9 +24,7 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
-        /* レイヤー6がアクティブな時だけスクロールに変換する */
-        input-processors = <&zip_scroll_transform>;
+        input-processors = <&zip_scroll_transform 0>;
         scroll-layers = <6>;
     };
 };
