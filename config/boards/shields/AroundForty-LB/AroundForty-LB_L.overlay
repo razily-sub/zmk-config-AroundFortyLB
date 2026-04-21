@@ -17,7 +17,7 @@
     /* これがないと "undefined node label 'zip_scroll_transform'" エラーになります */
     zip_scroll_transform: zip_scroll_transform {
         compatible = "zmk,input-processor-transform";
-        #input-processor-cells = <0>;
+        #input-processor-cells = <1>;
         type = <INPUT_EV_REL>;
         x-codes = <INPUT_REL_HWHEEL>;
         y-codes = <INPUT_REL_WHEEL>;
